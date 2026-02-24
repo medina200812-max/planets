@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planets Fact Site</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+  
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #070724;
+        background-image: url("https://raw.githubusercontent.com/poudyalanil/planet-fact-site/main/public/assets/background-stars.svg");
+        color: white;
+        font-family: "League Spartan", sans-serif;
+        min-height: 100vh;
+      }
+
+      header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 0 40px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+      }
+
+      .logo {
+        font-family: "Antonio", sans-serif;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        height: 100%;
+      }
+
+      nav ul li {
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+        opacity: 0.7;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        border-top: 4px solid transparent;
+        transition: 0.3s;
+      }
+
+      nav ul li:hover {
+        opacity: 1;
+      }
+
+  
+      nav ul li:nth-child(1):hover {
+        border-top-color: #def4fc;
+      }
+      nav ul li:nth-child(2):hover {
+        border-top-color: #f7cc7f;
+      }
+      nav ul li:nth-child(3):hover,
+      nav ul li.active {
+        border-top-color: #6d2ed5;
+        opacity: 1;
+      }
+      nav ul li:nth-child(4):hover {
+        border-top-color: #d14c32;
+      } 
+      nav ul li:nth-child(5):hover {
+        border-top-color: #d83a34;
+      } 
+      nav ul li:nth-child(6):hover {
+        border-top-color: #cd5120;
+      } 
+      nav ul li:nth-child(7):hover {
+        border-top-color: #1ec2a4;
+      } 
+      nav ul li:nth-child(8):hover {
+        border-top-color: #2d68f0;
+      } 
+      .container {
+        max-width: 1100px;
+        margin: 80px auto;
+        padding: 0 20px;
+      }
+
+      .hero-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 80px;
+      }
+
+      .planet-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .planet-image img {
+        width: 100%;
+        max-width: 450px;
+      }
+
+      .content {
+        max-width: 350px;
+      }
+
+      .content h1 {
+        font-family: "Antonio", sans-serif;
+        font-size: 80px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+      }
+
+      .content p {
+        line-height: 1.6;
+        opacity: 0.8;
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+
+      .source {
+        font-size: 14px;
+        opacity: 0.5;
+        margin-bottom: 40px;
+      }
+
+      .source span {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      /* 4. БАТЫРМАЛАР (SIDE BUTTONS) */
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .btn {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 15px 25px;
+        text-align: left;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn span {
+        opacity: 0.5;
+        margin-right: 20px;
+      }
+
+      .btn:hover {
+        background-color: rgba(216, 216, 216, 0.2);
+      }
+
+      .btn.earth {
+        background-color: #6d2ed5;
+        border-color: #6d2ed5;
+      }
+
+      .stats {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+      }
+
+      .stat-box {
+        flex: 1;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 20px 25px;
+      }
+
+      .stat-box h6 {
+        font-size: 11px;
+        opacity: 0.5;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      .stat-box h2 {
+        font-family: "Antonio", sans-serif;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2 class="logo">THE PLANETS</h2>
+        <ul>
+          <li class="mercury">MERCURY</li>
+          <li class="venus">VENUS</li>
+          <li class="earth">EARTH</li>
+          <li class="mars">MARS</li>
+          <li class="jupiter">JUPITER</li>
+          <li class="saturn">SATURN</li>
+          <li class="uranus">URANUS</li>
+          <li class="neptune">NEPTUNE</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="hero-section">
+        <div class="planet-image">
+          <img class="image" src="earth.png" alt="Earth" />
+        </div>
+
+        <div class="content">
+          <h1 class="planet">EARTH</h1>
+          <p class="info">
+            Third planet from the Sun and the only known planet to harbor life.
+            About 29.2% of Earth's surface is land with remaining 70.8% is
+            covered with water. Earth's distance from the Sun, physical
+            properties and geological history have allowed life to evolve and
+            thrive.
+          </p>
+          <div class="source">Source: <span>Wikipedia</span> 🔗</div>
+
+          <div class="buttons">
+            <button class="btn active"><span>01</span> OVERVIEW</button>
+            <button class="btn"><span>02</span> INTERNAL STRUCTURE</button>
+            <button class="btn"><span>03</span> SURFACE GEOLOGY</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-box">
+          <h6>ROTATION TIME</h6>
+          <h2 class="rotation">0.99 DAYS</h2>
+        </div>
+        <div class="stat-box">
+          <h6>REVOLUTION TIME</h6>
+          <h2 class="revolution">365.26 DAYS</h2>
+        </div>
+        <div class="stat-box">
+          <h6>RADIUS</h6>
+          <h2 class="radius">6,371 KM</h2>
+        </div>
+        <div class="stat-box">
+          <h6>AVERAGE TEMP.</h6>
+          <h2 class="average">16°C</h2>
+        </div>
+      </div>
+    </main>
+    <script>
+      let mercury = document.querySelector(".mercury");
+      let venus = document.querySelector(".venus");
+      let earth = document.querySelector(".earth");
+      let mars = document.querySelector(".mars");
+      let jupiter = document.querySelector(".jupiter");
+      let saturn = document.querySelector(".saturn");
+      let uranus = document.querySelector(".uranus");
+      let neptune = document.querySelector(".neptune");
+      let planet = document.querySelector(".planet");
+      let info = document.querySelector(".info");
+      let rotation = document.querySelector(".rotation");
+      let revolution = document.querySelector(".revolution");
+      let radius = document.querySelector(".radius");
+      let average = document.querySelector(".average");
+      let image = document.querySelector(".image");
+      let li = document.querySelectorAll("li");
+      for (let i = 0; i < li.length; i++) {
+        li[i].addEventListener("click", async function add() {
+          let URL = `./data.json`;
+          let promise = await fetch(URL);
+          let data = await promise.json();
+          planet.innerHTML = data.planets[i].name;
+          info.innerHTML = data.planets[i].description;
+          rotation.innerHTML = data.planets[i].orbital_period;
+          average.innerHTML = data.planets[i].average_temperature;
+          revolution.innerHTML = data.planets[i].ds;
+          radius.innerHTML = data.planets[i].km;
+          image.src = data.planets[i].image_url;
+        });
+      }
+    </script>
+  </body>
+</html>

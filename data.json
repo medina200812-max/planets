@@ -1,0 +1,93 @@
+{
+  "planets": [
+    {
+      "id": 1,
+      "name": "Mercury",
+      "description": "The smallest planet in our solar system and closest to the Sun.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui officia tempore laborum cumque eaque at, molestiae deserunt saepe alias.",
+      "average_temperature": "167°C",
+      "ds": "365 days",
+      "km": "6,371 KM",
+      "orbital_period": "88 days",
+      "image_url": "./mercury-planet-foreign-planet-isolated-transparent-background_191095-20242-removebg-preview.png"
+    },
+    {
+      "id": 2,
+      "name": "Venus",
+      "description": "Spinning in the opposite direction to most planets, Venus is the hottest planet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui officia tempore laborum cumque eaque at, molestiae deserunt saepe alias.",
+      "average_temperature": "464°C",
+      "km": "4,671 KM",
+      "ds": "476 days",
+      "orbital_period": "225 days",
+      "image_url": "./OSIRIS_Mars_true_color-removebg-preview.png"
+    },
+    {
+      "id": 3,
+      "name": "Earth",
+      "description": "Our home planet and the only place we know of so far that's inhabited by living things.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui officia tempore laborum cumque eaque at, molestiae deserunt saepe alias.",
+      "average_temperature": "15°C",
+      "km": "10,371 KM",
+      "ds": "250 days",
+      "orbital_period": "365.25 days",
+      "image_url": "./earth.png"
+    },
+    {
+      "id": 4,
+      "name": "Mars",
+      "description": "The Red Planet is a dusty, cold, desert world with a very thin atmosphere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui officia tempore laborum cumque eaque at, molestiae deserunt saepe alias.",
+      "average_temperature": "-65°C",
+      "orbital_period": "687 days",
+      "km": "9,316 KM",
+      "ds": "409 days",
+      "image_url": "./OSIRIS_Mars_true_color-removebg-preview.png"
+    },
+    {
+      "id": 5,
+      "name": "Jupiter",
+      "description": "The largest planet in our solar system, more than twice as massive as all the other planets combined.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui officia tempore laborum cumque eaque at, molestiae deserunt saepe alias.",
+      "average_temperature": "-110°C",
+      "km": "2,902 KM",
+      "orbital_period": "12 years",
+      "ds": "354 days",
+      "image_url": "./mercury-planet-foreign-planet-isolated-transparent-background_191095-20242-removebg-preview.png"
+    },
+    {
+      "id": 6,
+      "name": "Saturn",
+      "description": "Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui officia tempore laborum cumque eaque at, molestiae deserunt saepe alias.",
+      "average_temperature": "-140°C",
+      "orbital_period": "29 years",
+      "km": "7,371 KM",
+      "ds": "432 days",
+      "image_url": "./OSIRIS_Mars_true_color-removebg-preview.png"
+    },
+    {
+      "id": 7,
+      "name": "Uranus",
+      "description": "An ice giant that spins on its side at a nearly 90-degree angle from the plane of its orbit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui officia tempore laborum cumque eaque at, molestiae deserunt saepe alias.",
+      "average_temperature": "-195°C",
+      "orbital_period": "84 years",
+      "km": "7,541 KM",
+      "image_url": "./venusatmosphere-surface-features-captured-highresolution-imagery-transparent_1080455-11113-removebg-preview.png"
+    },
+    {
+      "id": 8,
+      "name": "Neptune",
+      "description": "The eighth and most distant major planet orbiting our Sun, dark, cold and whipped by supersonic winds.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui officia tempore laborum cumque eaque at, molestiae deserunt saepe alias.",
+      "average_temperature": "-201°C",
+      "km": "4,311 KM",
+      "ds": "236 days",
+      "orbital_period": "165 years",
+      "image_url": "./detailed-view-venus-showcasing-its-thick-atmosphere-surface-features-captured-highresolution-imagery-transparent_1080455-11113-removebg-preview.png"
+    },
+    {
+      "id": 9,
+      "name": "Pluto",
+      "description": "Once considered the ninth planet, it is now classified as a dwarf planet in the Kuiper Belt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui officia tempore laborum cumque eaque at, molestiae deserunt saepe alias.",
+      "average_temperature": "-225°C",
+      "km": "2,390 KM",
+      "ds": "967 days",
+      "orbital_period": "248 years",
+      "image_url": "./mercury-planet-foreign-planet-isolated-transparent-background_191095-20242-removebg-preview.png"
+    }
+  ]
+}
